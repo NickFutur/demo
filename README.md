@@ -35,3 +35,8 @@ C# XAML Windows Рабочий стол
             InitializeComponent();
             DGStaff.ItemsSource = SchoolEntities.GetContext().Staff.ToList();
         }
+           
+        Переход по страницам
+           UserWindow newForm = new UserWindow();
+           newForm.Show();
+           this.close();
