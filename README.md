@@ -33,10 +33,17 @@ C# XAML Windows Рабочий стол
      private void DG_test_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             InitializeComponent();
-            DGStaff.ItemsSource = SchoolEntities.GetContext().Staff.ToList();
+            DGStaff.ItemsSource = SchoolEntities.GetContext().Staff.ToList(); (Staff - это название таблицы)
         }
            
         Переход по страницам
            UserWindow newForm = new UserWindow();
            newForm.Show();
            this.close();
+           
+           
+         Git в случае возникновения ошибки при git push писать команды:
+           git fetch
+           git pull
+           git push
+           
