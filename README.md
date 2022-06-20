@@ -39,7 +39,12 @@ C# XAML Windows Рабочий стол
         Переход по страницам
            UserWindow newForm = new UserWindow();
            newForm.Show();
-           this.close();
+           Сlose();
+      
+         Переход по страницам, если окно находится в папке Pages
+           Pages.UserWindow newForm = new Pages.UserWindow();
+           newForm.Show();
+           Сlose();
            
            
          Git в случае возникновения ошибки при git push писать команды:
@@ -47,3 +52,9 @@ C# XAML Windows Рабочий стол
            git pull
            git push
            
+           Внешний вид выпадающего списка
+           <ComboBox Width="100" Height="30">
+                <TextBlock>От А до Я</TextBlock>
+                <TextBlock>По убыванию</TextBlock>
+                <TextBlock>По возрастанию</TextBlock>
+            </ComboBox>
