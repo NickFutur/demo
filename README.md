@@ -5,7 +5,7 @@ C# XAML Windows Рабочий стол
 
 
 
-Добавиьт элемент -> Model ADO.NET EDM 
+Добавить элемент -> Model ADO.NET EDM 
 Для работы с БД в приложении ищем файл Model1.edmx -> Model1.Context.cs
         private static SchoolEntities _context; - нужно прописать
         public SchoolEntities()
@@ -58,3 +58,15 @@ C# XAML Windows Рабочий стол
                 <TextBlock>По убыванию</TextBlock>
                 <TextBlock>По возрастанию</TextBlock>
             </ComboBox>
+           
+           
+           Чтобы повесить сообщение нужно например для кнопки прописать:
+           MessageBox.Show("Переход");
+           
+    Вывод окна в центре экрана монитора прописываем: WindowStartupLocation="CenterScreen", а именно во фрагменте: 
+                   Title="MainWindow" MinHeight="450" Height="450" MinWidth="800" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+                ...
+                
+                
